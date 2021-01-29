@@ -1,0 +1,112 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: #FFF;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-weight: bold;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0 5px;
+    color: #AAA;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+.container {
+    margin-left: 10px;
+    ;
+}
+
+
+/*** destaque ***/
+
+.destaque {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(/img/capa-house.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.destaque .container {
+    max-width: 90%;
+}
+
+.destaque .titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+}
+
+.destaque .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+}
+
+.botoes button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #FFF;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .1s ease-in;
+}
+
+.botoes button:hover {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+}
+
+.botoes button i {
+    margin-right: 5px;
+    ;
+}
+
+.carrosel-filmes {
+    margin-top: 20px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
